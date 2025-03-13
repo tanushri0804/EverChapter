@@ -1,0 +1,33 @@
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .book-card {
+    background: #1E1E1E;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+  }
+  
+  .read-btn {
+    background: #D4AF37;
+    color: #121212;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .delete-btn {
+    background: #B8860B;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  

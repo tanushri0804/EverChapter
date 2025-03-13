@@ -1,0 +1,28 @@
+/* Full Screen Dashboard */
+.dashboard {
+  width: 100vw;
+  height: 100vh;
+  background: #121212;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.dashboard-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #D4AF37;
+}
+
+/* Dashboard Layout - Full Width */
+.dashboard-container {
+  display: flex;
+  width: 90%;
+  max-width: 1400px;
+  gap: 40px;
+}
+
+/* Free Books Section *

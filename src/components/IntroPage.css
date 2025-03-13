@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+/* Container */
+.intro-container {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #121212; /* Dark mode background */
+  color: #EAEAEA; /* Warm white text */
+  position: relative;
+  overflow: visible;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #D4AF37; /* Gold */
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: 2px solid #D4AF37;
+  background: transparent;
+  border-radius: 25px;
+  font-size: 16px;
+  color: #D4AF37;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #B8860B; /* Bronze */
+  color: #121212;
+}
+
+/* Intro Header */
+.intro-header {
+  margin-top: 150px;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.intro-header h2 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #D4AF37; /* Gold */
+  text-shadow: 0px 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+.intro-header p {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #EAEAEA;
+  opacity: 0.9;
+}
+
+/* CTA Button */
+.primary {
+  background: #D4AF37;
+  color: #121212;
+  font-size: 18px;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: bold;
+  margin-top: 20px;
+  box-shadow: 0px 5px 15px rgba(212, 175, 55, 0.4);
+  transition: all 0.3s ease;
+}
+
+.primary:hover {
+  background: #B8860B;
+  color: #121212;
+  box-shadow: 0px 8px 20px rgba(184, 134, 11, 0.5);
+}
+
+/* Features Section */
+.features {
+  margin-top: 60px;
+  padding: 40px;
+  width: 80%;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.1);
+  animation: slideUp 1.5s ease-in-out forwards;
+  opacity: 0;
+}
+
+.feature-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.feature {
+  text-align: center;
+  width: 250px;
+}
+
+.feature span {
+  font-size: 40px;
+  color: #D4AF37;
+  text-shadow: 0px 3px 8px rgba(212, 175, 55, 0.5);
+}
+
+.feature h4 {
+  font-size: 22px;
+  margin-top: 10px;
+  color: #EAEAEA;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .intro-header h2 {
+    font-size: 36px;
+  }
+
+  .intro-header p {
+    font-size: 16px;
+  }
+
+  .features {
+    width: 90%;
+  }
+
+  .feature {
+    width: 100%;
+  }
+}
+
+/* Trending Books */
+.trending-books,
+.how-it-works,
+.reviews {
+  width: 100vw;
+  max-width: 1200px;
+  padding: 50px 20px;
+  margin: 0 auto;
+}
+
+.book-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.book img {
+  width: 120px;
+  height: 160px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(212, 175, 55, 0.2);
+}
+
+/* How It Works */
+.steps {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.step {
+  text-align: center;
+  width: 250px;
+}
+
+/* Reviews */
+.review-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.review {
+  background: rgba(255, 255, 255, 0.1);
+  color: #EAEAEA;
+  padding: 20px;
+  border-radius: 12px;
+  width: 250px;
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  margin-top: 40px;
+  color: #EAEAEA;
+}
